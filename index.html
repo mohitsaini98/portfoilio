@@ -1,0 +1,200 @@
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohit Saini — Portfolio</title>
+  
+  <meta name="description" content="Manav — Frontend Developer | B.Tech (CSE) Student | Web Design Intern at Solitaire Infosys">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#071022; --card:#0b1630; --muted:#9fb0c8; --accent:#7c3aed; --accent2:#06b6d4; --glass:rgba(255,255,255,0.03); --radius:14px; --max:1100px; color-scheme:dark;
+    }
+    *{box-sizing:border-box}html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#031022);color:#e6eef8;line-height:1.45;padding:30px;display:flex;justify-content:center}
+    .wrap{width:100%;max-width:var(--max);display:grid;grid-template-columns:320px 1fr;gap:24px}
+
+    /* Sidebar */
+    .sidebar{background:linear-gradient(180deg,var(--card), rgba(10,14,20,0.7));padding:22px;border-radius:var(--radius);box-shadow:0 8px 40px rgba(2,6,23,0.6);position:sticky;top:30px;height:fit-content;text-align:center}
+    .avatar{width:130px;height:130px;margin:0 auto;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.06)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{font-size:20px;font-weight:700;margin-top:12px}
+    .title{color:var(--muted);font-size:13px;margin-top:6px}
+    .location{margin-top:6px;color:var(--muted);font-size:13px}
+    .contact-list{margin-top:16px;display:flex;flex-direction:column;gap:8px}
+    .contact-list a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;background:var(--glass);color:inherit;text-decoration:none;font-size:14px}
+    .section{margin-top:18px;text-align:left}
+    .section h4{margin:0 0 10px 0;font-size:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px}
+
+    /* Main */
+    .main{padding:22px;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));box-shadow:0 8px 40px rgba(2,6,23,0.5)}
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    header .intro h1{margin:0;font-size:28px}
+    header .intro p{margin:8px 0 0;color:var(--muted)}
+    .cta{display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#001;font-weight:700;text-decoration:none}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px}
+    .muted{color:var(--muted)}
+
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .timeline-item{padding:12px;background:rgba(255,255,255,0.02);border-radius:10px}
+    .projects .project{margin-bottom:12px}
+
+    .skills-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .skill-row{display:flex;justify-content:space-between;align-items:center}
+    .bar{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden;width:60%}
+    .bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){.wrap{grid-template-columns:1fr}.sidebar{position:relative;top:0;margin-bottom:12px}.grid-2{grid-template-columns:1fr}.skills-list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside class="sidebar">
+      <div class="avatar"><img src="    c:\Users\DELL\Pictures\PIC NEW.jpg"></div>
+      <div class="name">Mohit</div>
+      <div class="title">B.Tech (CSE) Student</div>
+      <div class="location">Panipat, India</div>
+
+      <div class="contact-list">
+        <a href="mailto:rmanav896@gmail.com">✉️ mohit.saini29639@gmail.com</a>
+        <a href="tel:9991279714">📞 9991279714</a>
+        <a href="https://linkedin.com/in/mohit-saini-1861a3296/" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/mohtsaini98" target="_blank">💼Gitub </a>
+      </div>
+
+      <div class="section">
+        <h4>Skills</h4>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Bootstrap</div>
+          
+        </div>
+      </div>
+
+      <div class="section">
+        <h4>Interpersonal</h4>
+        <div class="skills">
+          <div class="skill">Communication</div>
+          <div class="skill">Teamwork</div>
+          <div class="skill">Problem Solving</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h4>Education</h4>
+        <div class="muted">Bachelor of Technology in Computer Science Engineering (2025 - Present)</div>
+        <div>Geeta University</div>
+        <div class="muted" style="margin-top:8px">Intermediate (2022-2023) — S.C.R heritage  School</div>
+        <div class="muted">Secondary (2020-2021) — B.R.modern Ser. Sec. School</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header>
+        <div class="intro">
+          <h1>Hi, I'm Mohit.</h1>
+          <p class="muted">I'm a passionate Front-end Developer turning ideas into interactive web experiences.</p>
+        </div>
+        <div class="cta">
+          <a class="btn" href="mailto:mohit.saini29639@gmail.com">Contact Me</a>
+          <a class="btn" href="#projects">See Projects</a>
+        </div>
+      </header>
+
+      <section style="margin-top:18px" class="grid-2">
+        <div class="card">
+          <h3>About Me</h3>
+          <p class="muted">I'm Mohit, a B.Tech (CSE) student and Web Design Intern with experience in front-end development and UI/UX design. I enjoy building responsive interfaces and learning full‑stack concepts to deliver complete web applications.</p>
+        </div>
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <ul class="muted">
+            <li>Location: Panipat, India</li>
+            <li>Year: 3rd Year — B.Tech (CSE)</li>
+            <li>Availability: Open to internships and projects</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" style="margin-top:18px">
+        <h3>Internship & Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Python Developer Intern</strong> — Original Innovation LLP, Gurgaon (Jun 2025 - Aug 2025)
+            <div class="muted">Worked on Python backend features: OOP, debugging, and optimization. Collaborated with project managers to implement workflows.</div>
+          </div>
+
+        
+
+          <div class="timeline-item">
+            <strong>Web Designer Intern</strong> — Geeta technical Hub (Jun 2024 - Aug 2024)
+            <div class="muted">Designed eye-catching website layouts using HTML, CSS, JavaScript and Bootstrap.</div>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Full Stack Developer Intern</strong> — OCTANET (Dec 2024)
+            <div class="muted">Worked on frontend and backend integration using HTML, CSS, PHP and MySQL to build functional applications.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:18px">
+        <h3>Personal Projects</h3>
+        <div class="projects">
+          <div class="project card">
+            <h4>Library Management System</h4>
+            <p class="muted">A software solution to manage book cataloging, members, lending, returns and fine calculations. Built with HTML, CSS, Bootstrap, JavaScript, PHP.</p>
+          </div>
+
+          <div class="project card">
+            <h4>Hotel Management System</h4>
+            <p class="muted">Web-based system for room booking, billing and guest management with admin controls for bookings and payments. Built using HTML, CSS, JS and PHP/MySQL.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" style="margin-top:18px">
+        <h3>Technical Skills</h3>
+        <div class="skills-list">
+          <div>
+            <div class="skill-row"><div>HTML & CSS</div><div class="bar"><span style="width:92%"></span></div></div>
+            <div class="skill-row"><div>JavaScript</div><div class="bar"><span style="width:80%"></span></div></div>
+            <div class="skill-row"><div>Bootstrap</div><div class="bar"><span style="width:78%"></span></div></div>
+          </div>
+          <div>
+            <div class="skill-row"><div>PHP & MySQL</div><div class="bar"><span style="width:70%"></span></div></div>
+            <div class="skill-row"><div>Python</div><div class="bar"><span style="width:68%"></span></div></div>
+            <div class="skill-row"><div>DSA</div><div class="bar"><span style="width:65%"></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <h3>Contact</h3>
+        <div class="card">
+          <p class="muted">If you'd like to work together or have any questions, feel free to reach out.</p>
+          <p><strong>Email:</strong> <a href="mailto:mohit.saini29639@gmail.com">mohit.saini29639@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:9991279714">9991279714</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mohit-saini-1861a3296/" target="_blank">linkedin.com/in/mohit-saini-1861a3296</a></p>
+        </div>
+      </section>
+ 
+      <footer>
+        © <span id="year"></span> Mohit Saini — Built with ❤️
+      </footer>
+    </main>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
